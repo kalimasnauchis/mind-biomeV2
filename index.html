@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mind biome - ecologia cosmica</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="experience" aria-label="Mind Biome">
+      <h1 class="sr-only">mind biome</h1>
+      <canvas
+        id="biome"
+        aria-label="Espaco vivo, melancolico, misterioso e navegavel"
+      ></canvas>
+      <div class="atmosphere" aria-hidden="true"></div>
+      <div class="quiet-title" aria-hidden="true">mind biome / ecologia cosmica</div>
+      <nav class="depth-controls" aria-label="Camadas de observacao">
+        <button class="icon-button" id="zoom-out" type="button" aria-label="Observar de longe" title="Observar de longe">
+          <span aria-hidden="true">-</span>
+        </button>
+        <button class="icon-button" id="pulse" type="button" aria-label="Tocar o ecossistema" title="Tocar o ecossistema">
+          <span aria-hidden="true">~</span>
+        </button>
+        <button class="icon-button" id="zoom-in" type="button" aria-label="Aproximar o olhar" title="Aproximar o olhar">
+          <span aria-hidden="true">+</span>
+        </button>
+      </nav>
+      <output id="depth-state" class="sr-only" aria-live="polite">distante</output>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
